@@ -136,10 +136,6 @@ if (document.querySelector("#enroll")) {
     modelClose.addEventListener("click", modelCloseFunction)
     modelOverlay.addEventListener("click", modelCloseFunction)
 
-    document.body.classList.add("remove-scrolling");
-    model.classList.add("active")
-    modelOverlay.classList.add("active")
-    modelContainer.classList.add("active")
 
     enquireBtn.forEach((e) => {
         e.addEventListener("click", () => {
