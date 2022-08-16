@@ -177,28 +177,28 @@ $('a[href^="#"]').on('click', function (e) {
 
 /////////////////////////////////////////////////////
 // Mobile menu
-// const openBtn = document.querySelector("#hamburger-1")
-// const closeBtn = document.querySelector("#hamburger-2")
-// const nav_list = document.querySelector(".navigation__list")
-// const overlay = document.querySelector(".overlay")
-// const navContact = document.querySelector(".nav-contact")
-// overlay.classList.add("hidden")
+const openBtn = document.querySelector("#hamburger-1")
+const closeBtn = document.querySelector("#hamburger-2")
+const nav_list = document.querySelector(".navigation__list")
+const overlay = document.querySelector(".overlay")
+const navContact = document.querySelector(".nav-contact")
+overlay.classList.add("hidden")
 
-// function mobileMenu() {
-//     openBtn.classList.add("active");
-//     nav_list.classList.add("active")
-//     overlay.classList.remove("hidden")
-// }
-// function mobileMenuClose() {
-//     openBtn.classList.remove("active");
-//     nav_list.classList.remove("active")
-//     overlay.classList.add("hidden")
-// }
+function mobileMenu() {
+    openBtn.classList.add("active");
+    nav_list.classList.add("active")
+    overlay.classList.remove("hidden")
+}
+function mobileMenuClose() {
+    openBtn.classList.remove("active");
+    nav_list.classList.remove("active")
+    overlay.classList.add("hidden")
+}
 
 
-// openBtn.addEventListener("click", mobileMenu)
-// closeBtn.addEventListener("click", mobileMenuClose)
-// overlay.addEventListener("click", mobileMenuClose)
+openBtn.addEventListener("click", mobileMenu)
+closeBtn.addEventListener("click", mobileMenuClose)
+overlay.addEventListener("click", mobileMenuClose)
 
 /////////////////////////////////////////////////////
 // scroll

@@ -36,6 +36,10 @@
     -webkit-animation: headerSlideDown 0.5s ease forwards;
     animation: headerSlideDown 0.5s ease forwards;
 
+    @media only screen and (max-width: $bp-992) {
+      padding: 2rem 1rem;
+    }
+   
     .navigation {
       &__link {
         color: #30384e;
