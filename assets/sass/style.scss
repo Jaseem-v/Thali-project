@@ -619,6 +619,10 @@
       }
 
       .heading {
+        h6 {
+          font-size: 2.2rem;
+        }
+
         @media only screen and (max-width: $bp-xsmall) {
           // flex-direction: column;
           margin-bottom: 3rem !important;
