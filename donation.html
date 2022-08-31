@@ -85,7 +85,7 @@
 
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-6">
                                     <h6 class="popup__title">
                                         Scan to pay
                                     </h6>
@@ -95,24 +95,34 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 col-sm-6 ">
-                                    <h6 class="popup__title">
-                                        Upi Details
-                                    </h6>
+                                <div class="col-6 ">
+                                    <div class="popup__right">
 
-                                    <div class=" popup__qr-content">
+                                        <h6 class="popup__title popup__title--2">
+                                            Upi Details
+                                        </h6>
+
+                                        <div class=" popup__qr-content">
 
 
-                                        <div class="popup__bank-group">
-                                            <h5 class="popup__bank-id">
-                                                THIRUMATHALIAPPAN@SBI
-                                            </h5>
+                                            <div class="popup__bank-group">
+                                                <h5 class="popup__bank-id" id="popup__bank-id">
+                                                    THIRUMATHALIAPPAN@SBI
+                                                </h5>
 
-                                            <button class="btn popup__btn">
-                                                Copy UPI ID
-                                            </button>
-                                        </div>
-                                        <div class="popup__bank-group">
+
+                                                <div class="popup__tooltip">
+                                                    <button class="btn popup__btn" onclick="copyFunction()"
+                                                        style="position: unset;" onmouseout="copyOutFunc()">
+                                                        <p class="tooltiptext" id="myTooltip">Copy to
+                                                            clipboard</p>
+                                                        Copy UPI ID
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+                                            <!-- <div class="popup__bank-group">
                                             <h5 class="popup__bank-id">
                                                 9000000000
                                             </h5>
@@ -120,8 +130,11 @@
                                             <button class="btn popup__btn">
                                                 Copy Google Pay Number
                                             </button>
+                                        </div> -->
                                         </div>
+
                                     </div>
+
 
                                 </div>
 
@@ -159,7 +172,7 @@
 
                                                 <p class="donation__committe-description">
                                                     SB A/C NO : 67157398072 <br>
-                                                    IFSC CODE : SBTR0000564
+                                                    IFSC CODE : SBIN0070564
                                                 </p>
                                             </div>
                                         </div>
@@ -436,7 +449,7 @@
 
                                             <p class="donation__committe-description">
                                                 SB A/C NO : 67157398072 <br>
-                                                IFSC CODE :  SBIN0070564
+                                                IFSC CODE : SBIN0070564
                                             </p>
                                         </div>
                                     </div>
