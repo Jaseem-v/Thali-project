@@ -240,21 +240,17 @@ if (document.querySelector(".projects__btn")) {
     })
 }
 
-// //////////////////////////
-// // project
+function copyFunction() {
+    var copyText = document.getElementById("popup__bank-id");
+    navigator.clipboard.writeText(copyText.textContent);
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied: " + copyText.textContent;
+}
 
-// const projectBtn = document.querySelectorAll(".projects__single-item")
-
-// projectBtn.forEach((btn) => {
-//     btn.addEventListener("click", (el) => {
-//         let projectInfo = el.target.closest(".projects__outer");
-
-//         console.log(projectInfo.style);
-//         projectInfo.style.bottom = "-6rem"
-//     })
-// })
-
-
+function copyOutFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+}
 
 var tabs = document.getElementsByClassName('gallery__item');
 
