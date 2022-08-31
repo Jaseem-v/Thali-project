@@ -5,6 +5,14 @@
 
     &--only {
         padding-bottom: 30rem;
+
+        @media only screen and (max-width: $bp-992) {
+            padding-bottom: 16rem;
+        }
+
+        @media only screen and (max-width: $bp-xsmall) {
+            padding-bottom: 8rem;
+        }
     }
 
     &__title {
