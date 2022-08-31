@@ -1,5 +1,5 @@
-// //////////////////
-//TABS
+///////////////////
+// TABS
 
 
 var swiper = new Swiper(".video-Swiper", {
@@ -231,24 +231,14 @@ $(document).ready(function () {
 //         console.log(clickedBtn);
 //     })
 // })
-// $('.projects__btn').magnificPopup({
-//     type: 'image',
-//     gallery: {
-//         enabled: true
-//     },
-//     callbacks: {
-//         open: function () {
-//             $.magnificPopup.instance.close = function () {
-//                 $.magnificPopup.proto.close.call(this);
-//                 clickedBtn.style.bottom = "0rem"
-//                 setTimeout(() => {
-//                     clickedBtn.style.bottom = "-6rem"
-//                 }, 200)
-//             };
-
-//         }
-//     }
-// })
+if (document.querySelector(".projects__btn")) {
+    $('.projects__btn').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: false
+        },
+    })
+}
 
 // //////////////////////////
 // // project

@@ -64,7 +64,7 @@
         }
 
         img {
-          width: 15rem;
+          width: 5rem;
         }
       }
 
@@ -95,15 +95,21 @@
   &__logo {
     cursor: pointer;
     position: relative;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    &-text {
+      color: $color-primary;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
     // padding: 1.5rem 0;
 
     img {
-      width: 15rem;
+      width: 5rem;
       border-radius: 0px;
-
-      @media only screen and (max-width: $bp-xsmall) {
-        width: 15rem;
-      }
     }
 
     @media only screen and (max-width: $bp-992) {
