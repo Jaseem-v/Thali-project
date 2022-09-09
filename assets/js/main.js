@@ -1,3 +1,13 @@
+/////////////////////////////////////////
+/// nav active
+
+document.querySelectorAll(".navigation__link").forEach((nav) => {
+    nav.classList.remove('active');
+    if (nav.href === window.location.href) {
+        nav.classList.add('active');
+    }
+})
+
 ///////////////////
 // TABS
 
@@ -265,5 +275,6 @@ function setActiveClass(evt) {
 
     evt.currentTarget.classList.add('active');
 }
+
 
 
